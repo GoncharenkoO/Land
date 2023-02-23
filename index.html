@@ -6,222 +6,308 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Land</title>
     <link rel="icon" type="image/png" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="page-header">
-      <a href="./index.html" class="logo-link link">
-        <img class="logo-img" src="./images/logo.svg" alt="Logo" />
-        Finance<span>Ledger</span>
-      </a>
-      <nav>
-        <ul class="header-list list">
-          <li><a class="header-link link" href="./index.html">Home</a></li>
-          <li><a class="header-link link" href="#about">About</a></li>
-          <li><a class="header-link link" href="#cases">Cases</a></li>
-          <li><a class="header-link link" href="#blog">Blog</a></li>
-          <li><a class="header-link link" href="#contacts">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="container nav-header">
+        <a href="./index.html" class="logo-link">
+          <img class="logo-img" src="./images/logo.svg" alt="Logo" />
+          Finance<span class="sign">Ledger</span>
+        </a>
+        <nav class="nav-site">
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-link" href="./index.html">Home</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="#about">About</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="#cases">Cases</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="#blog">Blog</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">The Sky Is The Limit</h1>
-        <p class="hero-text">We provide world class financial assistance</p>
-        <button class="btn" type="button">Read More</button>
+        <div class="container">
+          <h1 class="hero-title centered">The Sky Is The Limit</h1>
+          <p class="hero-text centered">
+            We provide world class financial assistance
+          </p>
+          <button class="btn hero-btn centered" type="button">Read More</button>
+        </div>
       </section>
       <section class="offers">
-        <h2 class="section-title visually-hidden">List offers</h2>
-        <ul class="offers-list list">
-          <li>
-            <img
-              src="./images/offers/university.svg"
-              alt="Investmant Banking"
-            />
-            <h3 class="offers-title">Investmant Banking</h3>
-            <p class="section-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur, necessitatibus!
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/offers/book-reader.svg"
-              alt="Portfolio Manager"
-            />
-            <h3 class="offers-title">Portfolio Manager</h3>
-            <p class="section-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur, necessitatibus!
-            </p>
-          </li>
-          <li>
-            <img src="./images/offers/pencil-alt.svg" alt="Tax & Custudio" />
-            <h3 class="offers-title">Tax & Custudio</h3>
-            <p class="section-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur, necessitatibus!
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title visually-hidden">List offers</h2>
+          <ul class="offers-list">
+            <li class="offers-item">
+              <div class="offers-img">
+                <img
+                  src="./images/offers/university.svg"
+                  alt="Investmant Banking"
+                />
+              </div>
+              <h3 class="offers-title centered">Investmant Banking</h3>
+              <p class="section-text offers-text centered">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequatur, necessitatibus!
+              </p>
+            </li>
+            <li class="offers-item">
+              <div class="offers-img">
+                <img
+                  src="./images/offers/book-reader.svg"
+                  alt="Portfolio Manager"
+                />
+              </div>
+              <h3 class="offers-title centered">Portfolio Manager</h3>
+              <p class="section-text offers-text centered">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequatur, necessitatibus!
+              </p>
+            </li>
+            <li class="offers-item">
+              <div class="offers-img">
+                <img
+                  src="./images/offers/pencil-alt.svg"
+                  alt="Tax & Custudio"
+                />
+              </div>
+              <h3 class="offers-title centered">Tax & Custudio</h3>
+              <p class="section-text offers-text centered">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequatur, necessitatibus!
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section id="about">
-        <img src="./images/about/rectangle.png" alt="About us" />
-        <p class="suptitle then-light">What you are looking for</p>
-        <h2 class="section-title then-light">We provide bespoke solutions</h2>
-        <p class="section-text then-light">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
-          ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
-          illum dolore explicabo ab dolores itaque rerum temporibus doloribus
-          iste maiores deleniti?
-        </p>
-        <button class="btn primary" type="button">Read More</button>
+      <section class="about" id="about">
+        <div class="container about-container">
+          <img
+            src="./images/about/about.jpg"
+            alt="About us"
+            width="680"
+            height="460"
+          />
+          <div class="about-right">
+            <p class="suptitle then-light other-sup">
+              What you are looking for
+            </p>
+            <h2 class="section-title then-light other-title">
+              We provide bespoke solutions
+            </h2>
+            <p class="section-text then-light other-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptate, ipsum dignissimos quae laudantium asperiores nam
+              aliquid impedit harum illum dolore explicabo ab dolores itaque
+              rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <button class="btn primary" type="button">Read More</button>
+          </div>
+        </div>
       </section>
-      <section id="cases">
-        <p class="suptitle">This is what we do</p>
-        <h2 class="section-title">Business Cases</h2>
-        <p class="section-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-          sapiente!
-        </p>
-        <ul class="cases-list list">
-          <li>
-            <img src="./images/cases/cases1.png" alt="" />
-          </li>
-          <li>
-            <img src="./images/cases/cases2.png" alt="" />
-          </li>
-          <li>
-            <img src="./images/cases/cases3.png" alt="" />
-          </li>
-          <li>
-            <img src="./images/cases/cases4.png" alt="" />
-          </li>
-          <li>
-            <img src="./images/cases/cases5.png" alt="" />
-          </li>
-          <li>
-            <img src="./images/cases/cases6.png" alt="" />
-          </li>
-          <li>
-            <img src="./images/cases/cases7.png" alt="" />
-          </li>
-          <li>
-            <img src="./images/cases/cases8.png" alt="" />
-          </li>
-        </ul>
+      <section class="cases" id="cases">
+        <div class="container">
+          <p class="suptitle them-sup centered">This is what we do</p>
+          <h2 class="section-title centered them-title">Business Cases</h2>
+          <p class="section-text them-text centered">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!
+          </p>
+          <ul class="cases-list">
+            <li class="cases-item">
+              <img src="./images/cases/cases1.jpg" alt="Cases" width="320" />
+            </li>
+            <li class="cases-item">
+              <img src="./images/cases/cases2.jpg" alt="Cases" width="320" />
+            </li>
+            <li class="cases-item">
+              <img src="./images/cases/cases3.jpg" alt="Cases" width="320" />
+            </li>
+            <li class="cases-item">
+              <img src="./images/cases/cases4.jpg" alt="Cases" width="320" />
+            </li>
+            <li class="cases-item">
+              <img src="./images/cases/cases5.jpg" alt="Cases" width="320" />
+            </li>
+            <li class="cases-item">
+              <img src="./images/cases/cases6.jpg" alt="Cases" width="320" />
+            </li>
+            <li class="cases-item">
+              <img src="./images/cases/cases7.jpg" alt="Cases" width="320" />
+            </li>
+            <li class="cases-item">
+              <img src="./images/cases/cases8.jpg" alt="Cases" width="320" />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section id="blog">
-        <p class="suptitle then-light">April 16 2020</p>
-        <h2 class="section-title then-light">Blog Post One</h2>
-        <p class="section-text then-light">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
-          ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
-          illum dolore explicabo ab dolores itaque rerum temporibus doloribus
-          iste maiores deleniti?
-        </p>
-        <button class="btn primary" type="button">Read Our Blog</button>
-        <img src="./images/blog/blog.png" alt="Blog" />
+      <section class="blog" id="blog">
+        <div class="container blog-container">
+          <div class="blog-left">
+            <p class="suptitle then-light other-sup">April 16 2020</p>
+            <h2 class="section-title then-light other-title">Blog Post One</h2>
+            <p class="section-text then-light other-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptate, ipsum dignissimos quae laudantium asperiores nam
+              aliquid impedit harum illum dolore explicabo ab dolores itaque
+              rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <button class="btn primary" type="button">Read Our Blog</button>
+          </div>
+          <img
+            src="./images/blog/blog.jpg"
+            alt="Blog"
+            width="680"
+            height="517"
+          />
+        </div>
       </section>
       <section class="team">
-        <p class="suptitle">Who we are</p>
-        <h2 class="section-title">Who we are</h2>
-        <p class="section-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-          sapiente!
-        </p>
-        <ul class="team-list list">
-          <li>
-            <a href="" class="team-link link">
-              <img src="./images/team/team1.png" alt="John Doe" width="420" />
-              <h3 class="team-title">John Doe</h3>
-              <p class="section-text">President</p>
-            </a>
-          </li>
-          <li>
-            <a href="" class="team-link link">
-              <img src="./images/team/team2.png" alt="Jane Doe" width="420" />
-              <h3 class="team-title">Jane Doe</h3>
-              <p class="section-text">Vice President</p>
-            </a>
-          </li>
-          <li>
-            <a href="" class="team-link link">
-              <img
-                src="./images/team/team3.png"
-                alt="Steve Smith"
-                width="420"
-              />
-              <h3 class="team-title">Steve Smith</h3>
-              <p class="section-text">Marketing Head</p>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <p class="suptitle them-sup centered">Who we are</p>
+          <h2 class="section-title them-title centered">Who we are</h2>
+          <p class="section-text them-text centered">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!
+          </p>
+          <ul class="team-list">
+            <li class="team-item">
+              <a href="" class="team-link">
+                <div class="team-img">
+                  <img
+                    src="./images/team/team1.jpg"
+                    alt="John Doe"
+                    width="420"
+                  />
+                </div>
+                <div class="team-content centered">
+                  <h3 class="team-title">John Doe</h3>
+                  <p class="section-text">President</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-item">
+              <a href="" class="team-link">
+                <div class="team-img">
+                  <img
+                    src="./images/team/team2.jpg"
+                    alt="Jane Doe"
+                    width="420"
+                  />
+                </div>
+                <div class="team-content centered">
+                  <h3 class="team-title">Jane Doe</h3>
+                  <p class="section-text">Vice President</p>
+                </div>
+              </a>
+            </li>
+            <li class="team-item">
+              <a href="" class="team-link">
+                <div class="team-img">
+                  <img
+                    src="./images/team/team3.jpg"
+                    alt="Steve Smith"
+                    width="420"
+                  />
+                </div>
+                <div class="team-content centered">
+                  <h3 class="team-title">Steve Smith</h3>
+                  <p class="section-text">Marketing Head</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="form-page">
-        <div>
+        <div class="container form-container">
           <img
-            src="./images/form/form-img.png"
+            src="./images/form/form-img.jpg"
             alt="Man sitting at the table"
             width="680"
           />
-        </div>
-        <div>
-          <h2 class="section-title">Request Callback</h2>
-          <form action="">
-            <label for="">
-              <input
-                type="text"
-                name="name"
-                id="name-footer"
-                placeholder="Enter your name"
-                required
-              />
-            </label>
-            <label for="">
-              <input
-                type="text"
-                name="email"
-                id="email-footer"
-                placeholder="Enter email*"
-                required
-              />
-            </label>
-            <button class="btn secondary" type="submit">Send</button>
-          </form>
+          <div class="form-right">
+            <h2 class="section-title form-title">Request Callback</h2>
+            <form class="form-content">
+              <div class="field">
+                <label for="name" class="label-form">
+                  <input
+                    class="input-form"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="field">
+                <label for="email" class="label-form">
+                  <input
+                    class="input-form"
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email*"
+                    required
+                  />
+                </label>
+              </div>
+              <button class="btn secondary" type="submit">Send</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
-    <footer id="contacts">
-      <ul class="footer-list list">
-        <li>
-          <a href="" class="footer-link link">
-            <img src="./images/footer/faceebook.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a href="" class="footer-link link">
-            <img src="./images/footer/twitter.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a href="" class="footer-link link">
-            <img src="./images/footer/yotube.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a href="" class="footer-link link">
-            <img src="./images/footer/linkedin.svg" alt="" />
-          </a>
-        </li>
-      </ul>
-      <p class="section-text then-light">
-        Copyright &copy; 2021 - FinanceLedger
-      </p>
+    <footer class="contacts" id="contacts">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="" class="footer-link">
+              <img src="./images/footer/faceebook.svg" alt="" />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="" class="footer-link">
+              <img src="./images/footer/twitter.svg" alt="" />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="" class="footer-link">
+              <img src="./images/footer/yotube.svg" alt="" />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="" class="footer-link">
+              <img src="./images/footer/linkedin.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+        <p class="section-text then-light centered">
+          Copyright &copy; 2021 - FinanceLedger
+        </p>
+      </div>
     </footer>
   </body>
 </html>

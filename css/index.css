@@ -1,0 +1,217 @@
+/******************* Page Header **********************/
+.page-header,
+.hero {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-link {
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.2; /* 42/35 */
+  color: var(--green-color);
+}
+.logo-link .sign {
+  color: var(--white-color);
+}
+.nav-site {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+}
+.header-list .header-link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 20px;
+}
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6; /* 28/18 */
+  color: var(--white-color);
+}
+.header-link:hover {
+  color: var(--green-color);
+}
+
+/**************************** Page Hero ****************************/
+.hero {
+  padding-top: 209px;
+  padding-bottom: 284px;
+}
+.hero-title {
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.2; /* 66/55 */
+  color: var(--hero-color);
+}
+.hero-text {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.7; /* 37/22 */
+  color: var(--hero-color);
+}
+.hero-btn {
+  margin: 0 auto;
+}
+
+/************************ Page Offers  **************************/
+.offers {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: var(--background);
+}
+.offers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offers-item:not(:last-child) {
+  margin-right: 50px;
+}
+.offers-img {
+  background-color: var(--green-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  margin: 0px auto 15px;
+}
+.offers-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65; /* 33/20 */
+}
+.offers-text {
+  max-width: 362px;
+}
+
+/************************ Page About *************************/
+.about-container,
+.blog-container {
+  display: flex;
+  align-items: center;
+}
+.about-right {
+  padding-top: 84px;
+  padding-right: 44px;
+  padding-bottom: 84px;
+  padding-left: 30px;
+  background-color: var(--green-color);
+}
+
+/*********************** Page Cases *********************/
+.cases,
+.team {
+  padding: 50px 0;
+}
+.cases-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cases-item {
+  flex-basis: calc((100% - 30px) / 4);
+}
+
+/********************** Page Blog ************************/
+.blog-container {
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+.blog-left {
+  padding-top: 112px;
+  padding-right: 44px;
+  padding-bottom: 113px;
+  padding-left: 30px;
+  background-color: var(--blue-color);
+}
+
+/************************ Page Team **********************/
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-item:not(:last-child) {
+  margin-right: 20px;
+}
+.team-img:hover,
+.team-img:focus {
+  box-shadow: var(--bcg-shadow);
+}
+.team-content {
+  padding: 10px 50px;
+}
+.team-title {
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.28; /* 32/25 */
+}
+.team-link {
+  color: var(--primary-text);
+}
+
+/**************************** Page Form **************************/
+.form-page {
+  background-color: var(--background);
+}
+.form-container {
+  display: flex;
+  align-items: center;
+}
+.form-right {
+  padding: 80px 30px;
+}
+.form-title {
+  margin-bottom: 34px;
+}
+.form-content {
+  margin-bottom: 60px;
+}
+
+/******************** Page Contacts  *************************/
+.contacts {
+  padding: 20px 0;
+  background-color: var(--primary-text);
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.footer-item:not(:last-child) {
+  margin-right: 25px;
+}
+.field {
+  margin-bottom: 36px;
+}
+.field:nth-child(2n) {
+  margin-bottom: 60px;
+}
+.input-form {
+  outline: none;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+  width: 595px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 18px;
+  line-height: 1.55; /* 28/18 */
+  letter-spacing: 0.01em;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
