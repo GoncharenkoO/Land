@@ -9,7 +9,9 @@
   --form-text: #808080;
   --bcg-form: #808080;
   --accent-color: #1f7e34;
-  --bcg-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+  --footer-bgc: rgba(255, 255, 255, 0.1);
+  --bgc: rgba(0, 0, 0, 0.4);
+  --bgc-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
 }
 body {
   font-family: var(--main-font);
