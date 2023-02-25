@@ -78,7 +78,14 @@
   color: var(--hero-color);
 }
 .hero-btn {
+  position: relative;
   margin: 0 auto;
+}
+.hero-btn::before {
+  position: absolute;
+  display: block;
+  left: 20px;
+  content: '>';
 }
 
 /************************ Page Offers  **************************/
